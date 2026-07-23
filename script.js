@@ -1,6 +1,10 @@
+let button = document.getElementById("addBtn");
+
+button.addEventListener("click", addTask);
+
 function addTask() {
     let input = document.getElementById("taskInput");
-    let task = input.value;
+    let task = input.value.trim();
 
     if (task === "") {
         alert("Please enter a task!");
